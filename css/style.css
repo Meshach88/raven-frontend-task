@@ -1,0 +1,354 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #1c2127;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #1c2127;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  position: fixed;
+  top: 0;
+  /* z-index:1 */
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.menu {
+  width: 65%;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ccc;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+
+.search form {
+  display: flex;
+  margin: 0;
+}
+
+.search input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.search input:hover {
+  border: 1px solid #72a0d4;
+}
+
+.search button {
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #ccc;
+}
+
+section {
+  width: 100%;
+  border: 1px solid #262932;
+  display: flex;
+  color: white;
+  /* justify-content:space-between; */
+  align-items: center;
+  padding: 10px 50px;
+  margin-top: 75px;
+}
+
+section div {
+  margin-right: 60px;
+}
+
+.coin-pair {
+  display: flex;
+  background: #20252b;
+}
+
+.coin-pair p {
+  color: green;
+  font-size: 18px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.clock-change {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 10px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+.time-change {
+  font-size: 12px;
+  color: green;
+}
+.price-change {
+  font-size: 12px;
+}
+
+article {
+  display: flex;
+}
+
+article img {
+  width: 60%;
+}
+article div img {
+  width: 245px;
+  height: 561px;
+  top: 168px;
+  left: 924px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+article div form {
+  width: 242px;
+  height: 448px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #20252b;
+  border: 1px solid #262932;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.btn-pair {
+  display: flex;
+  width: Fixed (239px) px;
+  height: Fixed (32px) px;
+  top: 12px;
+  left: 8px;
+  padding: 2px 0px 0px 0px;
+  gap: 0px;
+  border-radius: 10px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.buy-btn {
+  background: #00000029;
+  color: #fff;
+  width: 117.5px;
+  height: 28px;
+  padding: 6px 7.5px 6px 8px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.sell-btn {
+  background: #00000029;
+  color: #fff;
+  width: 117.5px;
+  height: 28px;
+  padding: 6px 0px 6px 0px;
+  gap: 0px;
+  border-radius: 0px 8px 0px 0px;
+  opacity: 0px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.form-tabs {
+  display: flex;
+  color: #fff;
+  width: Fixed (239px) px;
+  height: Fixed (28px) px;
+  top: 60px;
+  left: 8px;
+  gap: 8px;
+  opacity: 0px;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+}
+
+.form-input {
+  width: Fixed (239px) px;
+  height: Fixed (40px) px;
+  top: 104px;
+  left: 8px;
+  padding: 13px 16px 13px 16px;
+  gap: 0px;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #20252b;
+  border: 1px solid #373b3f;
+  color: #a7b1bc;
+  margin: 20px;
+}
+
+.form-total {
+  display: flex;
+  margin: 5px 10px;
+  justify-content: space-between;
+  font-family: Satoshi;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: #a7b1bc;
+}
+
+.buy-btc-btn {
+  background: linear-gradient(
+    90deg,
+    #483beb 0%,
+    #7847e1 47.92%,
+    #dd568d 96.35%
+  );
+  width: 230px;
+  height: 40px;
+  top: 188px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  border-radius: 8px 8px 8px 8px;
+  border: none;
+  color: #fff;
+}
+
+form hr {
+  width: 200px;
+  margin: auto;
+  border: 1px solid #394047;
+}
+.account {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: #a7b1bc;
+  margin: 20px 10px 5px;
+}
+
+.account-value {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.order-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deposit-btn {
+  background: #2764ff;
+  width: 80px;
+  height: 40px;
+  border-radius: 8px 8px 8px 8px;
+  margin: 20px 10px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.sub-section {
+  background: #20252b;
+  border: 1px solid #262932;
+  width: 1053px;
+  height: 450px;
+}
+
+.order-tabs {
+  width: 620px;
+  height: 40px;
+  padding: 2px;
+  background-color: #1c2127;
+}
+
+.order-tabs button {
+  width: 140px;
+  height: 36px;
+  padding: 10px 8px 10px 8px;
+  border-radius: 8px;
+  background: #21262c;
+  border: none;
+  color: #fff;
+}
+
+.order-tabs button:disabled {
+  color: #a7b1bc;
+  background: transparent;
+}
+
+.order-text {
+  text-align: center;
+  width: 378px;
+  height: 88px;
+  margin-top: 150px;
+  margin-left: 350px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.order-text p {
+  color: #a7b1bc;
+  font-size: 12px;
+  margin-top: 10px;
+}
