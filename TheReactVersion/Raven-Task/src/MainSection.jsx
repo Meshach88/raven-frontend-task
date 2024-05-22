@@ -1,65 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sisyphus</title>
-    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="./assets/croppedlogo.png" />
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <img src="./assets/logo.png" alt="logo" />
-      </div>
-      <ul class="menu">
-        <li><a href="">Dashboard</a></li>
-        <li><a href="">Markets</a></li>
-        <li><a href="">Wallet</a></li>
-        <li><a href="">Profile</a></li>
-      </ul>
-      <div class="search">
-        <form>
-          <input type="text" placeholder="Search..." />
-          <button type="submit">Go</button>
-        </form>
-      </div>
-    </nav>
+import React from "react";
+import {
+  logo,
+  arrowDown,
+  arrowUp,
+  chart,
+  coindrop,
+  line,
+  order_book,
+  Trading_view,
+} from "../src/assets";
+
+const MainSection = () => {
+  return (
     <main>
       <section>
         <div class="coin-pair">
-          <img src="./assets/coindrop.png" alt="trading pair" />
-          <select>BTC/USD
+          <img src={coindrop} alt="trading pair" />
+          <select>
+            BTC/USD
             <option></option>
           </select>
           <p>$20,634</p>
         </div>
         <div>
           <div class="clock-change">
-            <img src="./assets/Line.png" alt="clock" />
+            <img src={line} alt="clock" />
             <p class="change">24h change</p>
           </div>
           <p class="time-change">520.80+1.25%</p>
         </div>
         <div>
           <div class="clock-change">
-            <img src="./assets/arrowUp.png" alt="change" />
+            <img src={arrowUp} alt="change" />
             <p class="change">24h high</p>
           </div>
           <p class="price-change">520.80+1.25%</p>
         </div>
         <div>
           <div class="clock-change">
-            <img src="./assets/arrowDown.png" alt="change" />
+            <img src={arrowDown} alt="change" />
             <p class="change">24h low</p>
           </div>
           <p class="price-change">520.80+1.25%</p>
         </div>
         <div>
           <div class="clock-change">
-            <img src="./assets/chart.png" alt="change" />
+            <img src={chart} alt="change" />
             <p class="change">24h volume</p>
           </div>
           <p class="price-change">75,655.26</p>
@@ -67,9 +53,9 @@
       </section>
       <article>
         <div id="chart"></div>
-        <!-- <img src="./assets/Trading_view.png" alt="" /> -->
+        <img src={Trading_view} alt="" />
         <div>
-          <img src="./assets/order_book.png" alt="order book" />
+          <img src={order_book} alt="order book" />
         </div>
         <div>
           <form>
@@ -128,33 +114,7 @@
         </div>
       </div>
     </main>
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <h1><a href="">Contact Us</a></h1>
-                <p><a href="">Email: info@example.com</a></p>
-                <p>Phone: +234 7064528951</p>
-                <p>Address: 123 Shawn Street, UL</p>
-            </div>
-              <div class="footer-content">
-                <h3>Follow Us</h3>
-                <ul class="social-icons">
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="bottom-bar">
-            <hr>
-            <p>&copy; 2024 Sisyphus. All rights reserved</p>
-        </div>
+  );
+};
 
-    </footer>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js" integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
-  <script type="text/javascript" src="index.js"></script>
-</html>
+export default MainSection;
